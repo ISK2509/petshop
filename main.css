@@ -1,0 +1,144 @@
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+section {
+    padding-top: 70px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+
+
+
+.container {
+    max-width: 90%;
+}
+
+section .container {
+    display: block;
+    align-items: center;
+}
+
+.sobre-a-loja {
+    margin-bottom: 56px;
+}
+
+.sobre-a-loja img {
+    max-height: 370px;
+}
+
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+
+section .container div {
+    padding: 0.3em 0 0 2em;
+}
+
+
+/* Responsividade para dispositivos móveis (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    .sobre-a-loja img { 
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav li {
+        margin-bottom: 8px;
+    }
+
+    .carousel-caption {
+        text-align: center;
+    }
+
+    #sobre .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #img {
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .servicos-pet .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicos-pet .col-4 {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+/* Responsividade para dispositivos iPad (min-width: 768px e max-width: 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-a-loja img { 
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #sobre .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre img {
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .servicos-pet .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+        gap: 24px;
+        justify-content: center; /* Centraliza os cards */
+    }
+
+    .servicos-pet .col-4 {
+        width: 100%; /* Faz com que os cards ocupem a largura total disponível */
+        margin-bottom: 24px;
+    }
+
+    .servicos-pet .col-4 img {
+        margin: 0 0 16px 0;
+        width: 100%;
+        height: auto;
+    }
+}
